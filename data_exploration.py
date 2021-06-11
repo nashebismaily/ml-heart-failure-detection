@@ -25,7 +25,7 @@ for i, col in enumerate(numerical_features):
 plt.figure(figsize=(12, 8))
 for i, col in enumerate(categorical_features):
     plt.title(col)
-    sns.countplot(data=hf, x=col, hue="DEATH_EVENT")
+    sns.countplot(data=dataset, x=col, hue="DEATH_EVENT")
     plt.show()
 
 ## Data Normalization
